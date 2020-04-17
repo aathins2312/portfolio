@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- navigation bar-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+				<img src="logo.jpeg" style=" border-radius:50%; width: 128px; height: 128px; " alt="Kowshik N S">
+			</a>
+			<div class="navbar-header">
+				<h3>Kowshik N S</h3>
+				<p>Personal Portfolio</p>
+			</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+			data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item  active">
+					<a class="nav-link" href="#home" style="transition-duration: 10s;">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#Skills" style="transition-duration: 10s;">Skills</a>
+				</li>					
+				<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+				</li>					
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>					
+				<li class="nav-item">
+					<a class="nav-link" href="#connect" style="transition-duration: 10s;">Contact</a>
+				</li>
+			</ul>
+		</div>
+        </div>
+	</nav>
+<!--Home-->
+<div id="home" class="about-me">
+	<div class="col-sm-8 top-left padding">
+		<h1>Kowshik N S</h1>
+		<p>My name is N S Kowshik, I'm an B.E Electrical and Electronics Engineer. I'm a humble, hard working 
+		and quick learner. I'm instrested in Java and Python programming. </p>
+		<a href="resume.pdf" download="Resume" target="_blank">
+			<button class="btn btn-primary"> Resume</button>
+		</a>
+	</div>
+</div>
+<!--Skills-->
+<div id="Skills" class="skill jumbotron">
+	<h1 class="display-4 skill-title">Skills</h1>
+	<div class="row">
+		<div class="col-md-6">
+			<ul class="card c1" style="list-style-type: none;">
+				<h4 class="card-title">Frontend</h4>
+				<li>
+					<a>HTML</a>
+				</li>
+				<li>
+					<a>CSS</a>
+				</li>
+				<li>
+					<a>Java Script</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-md-6">
+			<ul class="card c2" style="list-style-type: none;">
+				<h4 class="card-title">Backend</h4>
+				<li>
+					<a>Java</a>
+				</li>
+				<li>
+					<a>J2EE</a>
+				</li>
+				<li>
+					<a>Python</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="connect" class="con">
+	<div class="container-fluid text-center">
+		<h1>Connect with...</h1>
+		<a href="https://www.facebook.com/aathi.nsk" target="_blank">
+			<i class="fab fa-facebook-square fa-4x facebook"></i>
+		</a>
+		<a href="https://www.linkedin.com/in/kowshik-n-s-82b530161" target="_blank">
+			<i class="fab fa-linkedin fa-4x linkedin"></i>
+		</a>
+		<a href="https://www.instagram.com/aathinsk" target="_blank">
+			<i class="fab fa-instagram fa-4x insta"></i>
+		</a>
+	</div>
+</div>
+</body>
