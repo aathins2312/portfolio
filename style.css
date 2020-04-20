@@ -6,30 +6,46 @@
     font-family: aardc;
     src: url(Fonts/AARDC.woff);
 }
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.padding{
+    padding-bottom: 2em;
+}
+*,:before,:after{
+    box-sizing:;
+    content: '';
+}
+@media screen and (max-width:450px) {
+    .card{
+        height: 3vh;
+    }
+  }
+
 /* Navigation bar*/
 .navbar-nav li{
     font-family: serif;
     font-weight:450;
-    font-size:2vw;
-    padding-right:20px;
+    font-size:1.7em;
+    padding-right:25px;
 }
-.navbar-header h3{
-    font-family:aardc ;
-    font-size:3vw;
-    letter-spacing: 5px;
-    font-weight:300;
-    padding-left:2vw;
+.nav-item :hover{
+    color: rgb(204, 127, 157);
 }
+
 .navbar-header p{
     font-family:cursive ;
-    font-size:2vw;
+    font-size:2em;
     letter-spacing: 2px;
     font-weight:50;
-    padding-left:2vw;
+    padding-left:20px;
 }
 /*About*/
-.about-me{
-    width: 100%;
+#home{
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
     height: 80vh;
     position: relative;
     text-align: center;
@@ -44,19 +60,18 @@
     left: 5%;
     border: 3px solid #fff;
     position: absolute;
-    padding: 2vw;
+    padding: 2em;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
 }
 #resumeButton{
-  background-color: rgb(57, 23, 211); /* Green */
-  border: none;
-  color: white;
-  padding: .7vw;
-  text-align: center;
-  border-radius:0.6rem;
-  font-size: 1.2vw;
+    border-color:whitesmoke;
+    font-size: large;
+    color: whitesmoke;
+}
+#resumeButton:hover{
+    background-color: rgb(74, 88, 211);
 }
 @keyframes change{
     0%{
@@ -72,53 +87,47 @@
 }
 
 .top-left h1{
-    font-size: 5vw;
+    font-size: 35px;
     font-family:KMKDSPK;
     text-transform: uppercase;
     color: seashell;
 }
 .about-me p{
-    font-size: 2.5vw;
+    font-size: 25px;
     font-style: oblique;
     font-weight: 350;
 }
 
 /* Skills */
-#skillContainer{
-    padding:1.5vw;
-}
-.jumbotron{
-    background:-webkit-linear-gradient(-35deg, rgb(152, 196, 211),rgb(157, 236, 217),rgb(168, 141, 221));
-    width:100%;
-    height:70vh;
-    margin-bottom: 0px;
-    padding: 1vw;
+.skill{
+    background:-webkit-linear-gradient(-35deg, rgb(152, 196, 211),rgb(157, 236, 217),rgb(168, 141, 221));  
 }
 .skill .card{
-    padding: 1vw;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    position: relative;
+    padding:2em;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 .card-title{
-    font-size: 2.5vw;
+    font-size: 35px;
     font-weight: 500;
     font-family: cursive;
 }
 .card li{
-    font-size: 1.7vw;
+    font-size: 25px;
 }
 @font-face{
     font-family: digital;
     src:url(Fonts/DSDIGI.woff)
 }
 .skill-title{
+    font-size:3.5em;
     color: blue;
     font-weight:350;
     text-shadow:4px 2px darksalmon;
     letter-spacing:5px;
     overflow: hidden;
-    margin-left:0 unset;
-    padding: 1.5vw;
+    padding:0.7em;
     font-family:digital;
     animation: typing 8s steps(30,end);
 }
@@ -127,19 +136,17 @@
     to { width: 100% }
 }
 /*Connect*/
-.con{
-    width: 100%;
-    height: 30vh;
-    background:-webkit-linear-gradient(-45deg ,rgba(107, 80, 163,0.7),rgba(72, 180, 77,0.7)); 
-    padding: 1vw;
+#connect{
+    background:-webkit-linear-gradient(-45deg ,rgba(107, 80, 163,0.7),rgba(72, 180, 77,0.7));
 }
-.con h1{
-    padding-top: 2.5vw;
-    padding-bottom: 1.5vw;
+#connect h2{
     color: azure;
+    padding-top:1em;
+    padding-bottom: 0.5em;
 }
-.fa-4x{ 
-    padding-right: 1vw;
+.social a{
+    font-size: 4em;
+    padding: 1rem;
 }
 .facebook{
     color: blue;

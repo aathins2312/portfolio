@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
+	<title>Aathi Nsk</title>
+	<link rel="icon" href="favicon-512x512.png" type="image/png" sizes="512x512">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
@@ -13,14 +14,14 @@
 </head>
 <body>
 <div class="root">
-    <!-- navigation bar-->
+	<!-- navigation bar-->
+	<div class="navigation">
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-				<img src="logo.jpeg" style=" border-radius:50%; width: 128px; height: 128px; " alt="Kowshik N S">
+				<img src="logo.jpeg" style=" border-radius:50%; width: 10vw; height: 10 vw; " alt="Kowshik N S">
 			</a>
 			<div class="navbar-header">
-				<h3>Kowshik N S</h3>
 				<p>Personal Portfolio</p>
 			</div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -29,18 +30,12 @@
 			</button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item  active">
+				<li class="nav-item">
 					<a class="nav-link" href="#home" style="transition-duration: 10s;">Home</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#Skills" style="transition-duration: 10s;">Skills</a>
-				</li>					
-				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
-				</li>					
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>					
+				</li>									
 				<li class="nav-item">
 					<a class="nav-link" href="#connect" style="transition-duration: 10s;">Contact</a>
 				</li>
@@ -49,20 +44,23 @@
         </div>
 	</nav>
 	<!--Home-->
-	<div id="home" class="about-me">
+	<div id="home" class="row about-me padding">
 		<div class="col-sm-8 top-left padding">
 			<h1>Kowshik N S</h1>
 			<p>My name is N S Kowshik, I'm an B.E Electrical and Electronics Engineer. I'm a humble, hard working 
 			and quick learner. I'm instrested in Java and Python programming. </p>
-			<a id="resumeButton" href="resume.pdf" download="Kowshik Resume" class="button" target="_blank">Resume</a>
+			<a href="resume.pdf" download="Kowshik Resume" target="_blank">
+				<button id="resumeButton" type="button" class="btn btn-outline-secondary">Resume</button>
+			</a>
 		</div>
 	</div>
+	</div>
 	<!--Skills-->
-	<div id="Skills" class="skill jumbotron">
-		<div id="skillContainer"> 
-			<h1 class="display-4 skill-title">Skills</h1>
+	<div id="Skills" class="skill padding">
+		<div class="col-md-12"> 
+			<h1 class="skill-title">Skills</h1>
 			<div class="row padding">
-				<div class="col-9 col-md-6 col-sm-6">
+				<div class="col-md-6">
 					<ul class="card c1" style="list-style-type: none;">
 						<h4 class="card-title">Frontend</h4>
 						<li>
@@ -76,7 +74,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-9 col-md-6 col-sm-6">
+				<div class="col-md-6">
 					<ul class="card c2" style="list-style-type: none;">
 						<h4 class="card-title">Backend</h4>
 						<li>
@@ -93,19 +91,23 @@
 			</div>
 		</div>
 	</div>
-	<div id="connect" class="con">
-		<div class="container-fluid text-center">
-			<h1>Connect with...</h1>
+	<div class="container-fluid">	
+	<div id="connect" class="row text-center">
+		<div class="col-12 text-center">
+			<h2>Connect with...</h2>
+		</div>
+		<div class="col-12 social padding">
 			<a href="https://www.facebook.com/aathi.nsk" target="_blank">
-				<i class="fab fa-facebook-square fa-4x facebook"></i>
+				<i class="fab fa-facebook-square facebook"></i>
 			</a>
 			<a href="https://www.linkedin.com/in/kowshik-n-s-82b530161" target="_blank">
-				<i class="fab fa-linkedin fa-4x linkedin"></i>
+				<i class="fab fa-linkedin linkedin"></i>
 			</a>
 			<a href="https://www.instagram.com/aathinsk" target="_blank">
-				<i class="fab fa-instagram fa-4x insta"></i>
+				<i class="fab fa-instagram insta"></i>
 			</a>
 		</div>
+	</div>
 	</div>
 </div>
 </body>
