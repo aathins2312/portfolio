@@ -247,7 +247,7 @@ hr{
         font-size:medium;
     }
     .carousel-caption p{ 
-        margin-bottom:10px;
+        margin-bottom:0px;
         padding-bottom: 0px;
     }
     .carousel-caption-title{
