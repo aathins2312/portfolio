@@ -14,6 +14,7 @@
 	<script src="toggle.js"></script>
 	<link href="simple-line-icon/css/simple-line-icons.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 </head>
 <body>
 <div class="root">
@@ -21,9 +22,6 @@
 		<ul class="navbar-nav ml-auto">
 			<li class="mask2 nav-item">
 				<i id="mask2i" class="fa fa-bars fa-2x"></i>
-			</li>
-			<li class="test1 nav-item">
-				<a class="nav-link" href="#connect"><i id="connecti" class="fa fa-paper-plane fa-1x"></i></a>
 			</li>
 			<li class="test2 nav-item">
 				<a  class="nav-link" href="#Skills"><i id="skilli" class="fa fa-graduation-cap fa-1x"></i></a>
@@ -34,15 +32,16 @@
 			<li class="test4 nav-item ">
 				<a  class="nav-link" href="#home"><i id="homei" class="fa fa-home fa-1x"></i></a>
 			</li>
+			<li class="test1 nav-item">
+				<a class="nav-link" href="#connect"><i id="connecti" class="fa fa-paper-plane fa-1x"></i></a>
+			</li>
 		</ul>
 	</div>
 	<!-- Home -->
 	<div class="container-fluid">
 		<div id="home" class="row about-me">
 			<div class="about-pic d-none d-lg-block col-4">
-				<div class="card">
-					<img class="img-fluid" src="img/logo.jpeg" style="align-self:center;" alt="Kowshik N S">
-				</div>
+				<div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="kowshik-n-s-82b530161"><a class="LI-simple-link" href='https://in.linkedin.com/in/kowshik-n-s-82b530161?trk=profile-badge'>Kowshik N S</a></div>
 			</div>
 			<div class="about text-center col-md-12 col-lg-8">
 				<h1>Kowshik N S</h1>
@@ -59,35 +58,58 @@
 		<div class="col-md-12"> 
 			<h1 class="skill-title">Skills</h1>
 			<div class="row padding">
-				<div class="col-md-6">
-					<ul class="card-body c1" style="list-style-type: none;">
-						<h4 class="card-title">Frontend</h4>
-						<hr>
-						<li>
-							<a><h5>HTML</h5></a>
-						</li>
-						<li>
-							<a><h5>CSS</h5></a>
-						</li>
-						<li>
-							<a><h5>Java Script</h5></a>
-						</li>
-					</ul>
+				<div class="column iconSkill">
+					<figure>
+						<img src="https://img.icons8.com/color/75/000000/html.png">
+						<figcaption>HTML</figcaption>
+					</figure> 
+					
 				</div>
-				<div class="col-md-6">
-					<ul class="card-body c2" style="list-style-type: none;">
-						<h4 class="card-title">Backend</h4>
-						<hr>
-						<li>
-							<a><h5>Java</h5></a>
-						</li>
-						<li>
-							<a><h5>J2EE</h5></a>
-						</li>
-						<li>
-							<a><h5>Python</h5></a>
-						</li>
-					</ul>
+				<div class="column iconSkill">
+					<figure>
+						<img src="https://img.icons8.com/color/75/000000/css3.png">
+						<figcaption>CSS 3</figcaption>
+					</figure>
+				</div>
+				
+				<div class="column iconSkill">
+					<figure>
+						<img class="iconSkill" src="https://img.icons8.com/color/75/000000/bootstrap.png">
+						<figcaption>Bootstrap</figcaption>
+					</figure>
+				</div>
+				<div class="column iconSkill">
+					<figure>
+						<img src="https://img.icons8.com/dusk/75/000000/react.png">
+						<figcaption>React Js</figcaption>
+					</figure>
+				</div>
+				
+			</div>
+			<div class="row padding">
+				<div class="column iconSkill">
+					<figure>
+						<img class="iconSkill" src="https://img.icons8.com/color/75/000000/javascript.png">
+						<figcaption>JavaScript</figcaption>
+					</figure>
+				</div>
+				<div class="column iconSkill">
+					<figure>
+						<img src="https://img.icons8.com/color/75/000000/github--v1.png">
+						<figcaption>Github</figcaption>
+					</figure>
+				</div>
+				<div  class="column iconSkill">
+					<figure>
+						<img class="iconSkill" src="https://img.icons8.com/color/75/000000/python.png">
+						<figcaption>Python 3.7</figcaption>
+					</figure>
+				</div>
+				<div class="column iconSkill">
+					<figure>
+						<img src="https://img.icons8.com/color/75/000000/java-coffee-cup-logo.png">
+						<figcaption>Java</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
@@ -97,14 +119,27 @@
 		<ul class="carousel-indicators">
 			<li data-target="#slides" data-slide-to="0"></li>
 			<li data-target="#slides" data-slide-to="1"></li>
+			<li data-target="#slides" data-slide-to="2"></li>
 		</ul>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
+				<img src="img/Corona.jpg">
+				<div class="carousel-caption">
+					<p class="carousel-caption-title">Corona Virus Tracker</p>
+					<p class="carousel-caption-body">Corona Virus tracking site developed using React JS, Redux and JSON</p>
+					<a href="https://github.com/aathins2312/covid" target="_blank">
+						<button type="button" class="btn btn-primary btn-lg">Git Code</button>
+					</a>
+					<a href="https://aathins2312.github.io/covid" target="_blank">
+						<button type="button" class="btn btn-outline-light btn-lg">Visit Website</button>	
+					</a>
+				</div>
+			</div>
+			<div class="carousel-item">
 				<img src="img/web.jpg">
 				<div class="carousel-caption">
 					<p class="carousel-caption-title">Personal Portfolio</p>
-					<p>Developed using HTML 5, CSS 3, Bootstrap 4, JavaScript</p>
-					<p>Next update : Using React JS </p>
+					<p class="carousel-caption-body">Developed using HTML 5, CSS 3, Bootstrap 4, JavaScript</p>
 					<a href="https://github.com/aathins2312/portfolio" target="_blank">
 						<button type="button" class="btn btn-primary btn-lg">View</button>
 					</a>
@@ -114,7 +149,7 @@
 				<img src="img/finalyr.jpg">
 				<div class="carousel-caption">
 					<p class="carousel-caption-title">Involuntary Power Meter</p>
-					<p>Automated system to Read , update and notify consumer about Meter reading at user end</p>
+					<p class="carousel-caption-body">Automated system to Read , update and notify consumer about Meter reading at user end</p>
 					<a href="https://github.com/aathins2312/involntary_power_meter" target="_blank">
 						<button type="button" class="btn btn-primary btn-lg">View</button>
 					</a>
@@ -139,7 +174,7 @@
 		<div class="col-12 social padding">
 			<ul class="list-inline mb-5">
 				<li class="list-inline-item">
-				  <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/_aathi_23_12/" target="_blank">
+				  <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/kowshik_n_s/" target="_blank">
 					<i class="icon-social-instagram"></i>
 				  </a>
 				</li>
